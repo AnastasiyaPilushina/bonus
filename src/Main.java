@@ -5,11 +5,11 @@ public class Main {
         int refill = 2000;
         int limit = 1000;
         if (refill >= limit) {
-            bonus = 100;
+            bonus = refill / 100 ;
         }else{
             bonus = 0;
         }
-        int total =( balance + refill) / bonus;
+        int total = balance + refill + bonus;
 
         System.out.println(total);
     }
